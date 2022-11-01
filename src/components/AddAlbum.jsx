@@ -7,7 +7,7 @@ export default function AddAlbum ({ setToggle, toggle }) {
     const handleSubmit = (e) => {
         e.preventDefault()
         //lets check if they entered all the data
-        if (!album || !artist){
+        if (!album || !artist || !year){
             alert('Please enter all info')
             return
         }
